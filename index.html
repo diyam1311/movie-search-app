@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MovieFinder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">MovieFinder</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- hero section -->
+    <section class="hero">
+      <h2>Find any movie, in seconds.</h2>
+      <p>Search thousands of movies and series, explore ratings and save your favourites.</p>
+    </section>
+
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search for a movie...">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+      <select id="genre">
+        <option>All genres</option>
+        <option>Action</option>
+        <option>Comedy</option>
+        <option>Drama</option>
+        <option>Sci-Fi</option>
+        <option>Horror</option>
+        <option>Romance</option>
+      </select>
+      <select id="year">
+        <option>Any year</option>
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+        <option>2022</option>
+        <option>2021</option>
+      </select>
+    </div>
+
+    <!-- switch between search results and saved movies -->
+    <div class="tabs">
+      <button id="tab-results" class="tab active">Search results</button>
+      <button id="tab-favourites" class="tab">My favourites (0)</button>
+    </div>
+
+    <h3 class="results-title" id="results-title">Popular movies</h3>
+    <p class="message" id="message"></p>
+
+    <div class="movie-grid" id="movie-grid"></div>
+  </main>
+
+  <footer>Internship project &ndash; MovieFinder</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
